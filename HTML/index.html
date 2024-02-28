@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style_cad.css">
+    <title>Document</title>
+    <script>
+        function toggleSenhaVisibility() {
+            var olho = document.getElementById('olho');
+            var senhaInput = document.getElementById('senha1');
+            if (senhaInput.type === 'password') {
+                senhaInput.type = 'text';
+                olho.style.backgroundImage = "url('../imagens/olho_aberto.png')"
+            } else {
+                senhaInput.type = 'password';
+                olho.style.backgroundImage = "url('../imagens/olho_fechado.png')"
+            } 
+        }
+
+        function toggleSenhaVisibility2() {
+            var olho2 = document.getElementById('olho2');
+            var senhaInput2 = document.getElementById('senha2');
+            if (senhaInput2.type === 'password') {
+                senhaInput2.type = 'text';
+                olho2.style.backgroundImage = "url('../imagens/olho_aberto.png')"
+            } else {
+                senhaInput2.type = 'password';
+                olho2.style.backgroundImage = "url('../imagens/olho_fechado.png')"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="login">
+        <img src="../imagens/logo.png">
+        <h1>Register</h1>
+        <div class="inputs">
+            <label for="user">Nome Completo</label>
+            <input type="text" id="user" placeholder="Full Name">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="exemploemail123@email.com">
+            <label for="email_ver">E-mail de recuperação</label>
+            <input type="email" id="email_ver" placeholder="exemploemail123@email.com">
+            <label for="user">Telefone</label>
+            <input type="tel" id="tel" placeholder="(00) 00000-0000 ">
+            <label for="data_nsc">Telefone</label>
+            <input type="date" id="data_nsc" placeholder="00/00/0000">
+            <label for="user">Nome Completo</label>
+            <input type="password" id="senha1" placeholder="Password">
+            <label for="user">Nome Completo</label>
+            <input type="password" id="senha2" placeholder="Password Confirmation">
+            <div class="olho" id="olho" onclick="toggleSenhaVisibility()"></div>
+            <div class="olho2" id="olho2" onclick="toggleSenhaVisibility2()"></div>
+        </div>
+        <a href="../HTML/login.html">i have a login</a>
+        <div class="button1">
+            <button>Clear</button>
+        </div>
+        <div class="button2">
+            <button>Login</button>
+        </div>
+    </div>
+    <script src="C:\Users\eduardo.g\Documents\sistema_cadastro\JS\script.js"></script>
+</body>
+</html>

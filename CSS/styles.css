@@ -1,0 +1,121 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.login {
+    border-style: solid;
+    border-color: rgba(240, 248, 255, 0.356);
+    border-radius: 2%;
+    height: 10vh;
+    padding: 16vh;
+    transform: scale(0.90);
+    transition: transform 3s;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.3);
+}
+
+.login img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(2%, 2%);
+    height: 6vh ;
+    width: 32vh;
+}
+
+.login h1 {
+    font-size: 3vh;
+    font-family: system-ui;
+    color: rgb(104, 104, 104);
+    position: absolute;
+    top: 7vh;
+    left: 15.5vh;
+}
+
+.login a {
+    font-size: 2vh;
+    font-family: system-ui;
+    color: rgb(73, 73, 73);
+    position: absolute;
+    top: 29vh;
+    left: 16vh;
+}
+
+.login .inputs .email input{
+    border-style: none;
+    display: block;
+    height: 5vh;
+    width: 60vh;
+    font-size: 2.5vh;
+    border-radius: 1.5vh;
+    text-align: center;
+}
+
+.login .inputs .senha input{
+    border-radius: 1.3vh;
+    border-style: none;
+    font-size: 2.5vh;
+    text-align: center;
+    height: 5vh;
+    width: 60vh;
+    position: absolute;
+    top: 23vh;
+    left: 16vh;
+}
+
+body {
+    width: 300px;
+    height: 300px;
+    background-size: 10500px;
+    background-color: rgba(172, 195, 196, 0.5);
+    background-image: url("../imagens/wallhaven-6de6wl.png");
+}
+
+.login .button2 button{
+    border-style: none;
+    height:3.5vh ;
+    width:10vh ;
+    font-size: 2vh;
+    border-radius: 2vh;
+    margin-left: 20vh;
+    position:absolute;
+    bottom: 5vh;
+    right: 16vh;
+}
+
+.login .button1 button{
+    border-style: none;
+    height:3.5vh ;
+    width:10vh ;
+    font-size: 2vh;
+    border-radius: 2vh;
+    margin-left: 20vh;
+    position:absolute;
+    bottom: 5vh;
+    right: 27vh;
+}
+
+.olho {
+    position: absolute;
+    right: 17vh;
+    top: 25.7vh;
+    transform: translateY(-50%);
+    width: 2vh;
+    height: 2vh;
+    background-image: url('../imagens/olho_fechado.png');
+    background-size: cover;
+    cursor: pointer;
+}

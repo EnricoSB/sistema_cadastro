@@ -18,7 +18,7 @@ input {
 .login {
     border-style: solid;
     border-color: rgba(240, 248, 255, 0.356);
-    border-radius: 80px;
+    border-radius: 2%;
     height: 10vh;
     padding: 38vh;
     transform: scale(0.90);
@@ -28,10 +28,10 @@ input {
 }
 
 .login img {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    transform: translate(2vh, 2vh);
+    transform: translate(2%, 2%);
     height: 6vh ;
     width: 32vh;
 }
@@ -48,34 +48,159 @@ input {
 .login a {
     font-size: 2vh;
     font-family: system-ui;
-    color: rgb(202, 202, 202);
+    color: rgb(48, 47, 47);
     position: absolute;
-    bottom: 7vh;
+    bottom: 11vh;
     left: 12.5vh;
 }
 
-.login input {
-
-    display: block;
-    margin-bottom: 100px;
-    height: 180px;
-    width: 2000px;
-    font-size: 75px;
-    border-radius: 50px;
-    text-align: center;
-}
-
-.login label {
+.login .inputs .nome_div label{
     font-size: 2vh;
     font-family: system-ui;
-    color: rgb(51, 51, 51);
-}
-
-.login .inputs {
+    color: rgb(10, 10, 10);
     position: absolute;
-    bottom: 9vh;
+    top: 18vh;
     left: 12vh;
 }
+
+.login .inputs .nome_div input{
+    border-radius: 1.3vh;
+    border-style: none;
+    font-size: 2vh;
+    text-align: center;
+    height: 5vh;
+    width: 52vh;
+    position: absolute;
+    top: 21vh;
+    left: 12vh;
+}
+
+.login .inputs .email_div label{
+    font-size: 2vh;
+    font-family: system-ui;
+    color: rgb(10, 10, 10);
+    position: absolute;
+    top: 27vh;
+    left: 12vh;
+}
+
+.login .inputs .email_div input{
+    border-radius: 1.3vh;
+    border-style: none;
+    font-size: 2vh;
+    text-align: center;
+    height: 5vh;
+    width: 52vh;
+    position: absolute;
+    top: 30vh;
+    left: 12vh;
+}
+
+.login .inputs .email_ver_div label{
+    font-size: 2vh;
+    font-family: system-ui;
+    color: rgb(10, 10, 10);
+    position: absolute;
+    top: 36vh;
+    left: 12vh;
+}
+
+.login .inputs .email_ver_div input{
+    border-radius: 1.3vh;
+    border-style: none;
+    font-size: 2vh;
+    text-align: center;
+    height: 5vh;
+    width: 52vh;
+    position: absolute;
+    top: 39vh;
+    left: 12vh;
+}
+
+.login .inputs .tel_div label{
+    font-size: 2vh;
+    font-family: system-ui;
+    color: rgb(10, 10, 10);
+    position: absolute;
+    top: 45vh;
+    left: 12vh;
+}
+
+.login .inputs .tel_div input{
+    border-radius: 1.3vh;
+    border-style: none;
+    font-size: 2vh;
+    text-align: center;
+    height: 5vh;
+    width: 25vh;
+    position: absolute;
+    top: 48vh;
+    left: 12vh;
+}
+
+.login .inputs .data_nsc_div label{
+    font-size: 2vh;
+    font-family: system-ui;
+    color: rgb(10, 10, 10);
+    position: absolute;
+    top: 45vh;
+    left: 39vh;
+}
+
+.login .inputs .data_nsc_div input{
+    border-radius: 1.3vh;
+    border-style: none;
+    font-size: 2vh;
+    text-align: center;
+    height: 5vh;
+    width: 25vh;
+    position: absolute;
+    top: 48vh;
+    left: 39vh;
+}
+
+.login .inputs .senha1_div label{
+    font-size: 2vh;
+    font-family: system-ui;
+    color: rgb(10, 10, 10);
+    position: absolute;
+    top: 54vh;
+    left: 12vh;
+}
+
+.login .inputs .senha1_div input{
+    border-radius: 1.3vh;
+    border-style: none;
+    font-size: 2vh;
+    text-align: center;
+    height: 5vh;
+    width: 52vh;
+    position: absolute;
+    top: 57vh;
+    left: 12vh;
+}
+
+.login .inputs .senha2_div label{
+    font-size: 2vh;
+    font-family: system-ui;
+    color: rgb(10, 10, 10);
+    position: absolute;
+    top: 63vh;
+    left: 12vh;
+}
+
+.login .inputs .senha2_div input{
+    border-radius: 1.3vh;
+    border-style: none;
+    font-size: 2vh;
+    text-align: center;
+    height: 5vh;
+    width: 52vh;
+    position: absolute;
+    top: 66vh;
+    left: 12vh;
+}
+
 
 body {
     width: 300px;
@@ -85,29 +210,33 @@ body {
     background-image: url("../imagens/wallhaven-6de6wl.png");
 }
 
-.login button {
-    height:120px ;
-    width:325px ;
-    font-size: 85px;
-    border-radius: 25px;
-    margin-left: 20vh;
-}
-
-.login .button2 {
+.login .button2 button{
+    border-radius: 1.3vh;
+    border-style: none;
+    font-size: 2vh;
+    text-align: center;
+    height: 3vh;
+    width: 10vh;
     position:absolute;
     bottom: 5vh;
-    right: 10vh;
+    right: 12vh;
 }
 
-.login .button1 {
+.login .button1 button{
+    border-radius: 1.3vh;
+    border-style: none;
+    font-size: 2vh;
+    text-align: center;
+    height: 3vh;
+    width: 10vh;
     position:absolute;
     bottom: 5vh;
-    right: 19vh;
+    right: 23.5vh;
 }
 
 .olho {
     position: absolute;
-    right: 12vh;
+    right: 13vh;
     bottom: 24.5vh;
     transform: translateY(-50%);
     width: 2vh;
@@ -119,8 +248,8 @@ body {
 
 .olho2 {
     position: absolute;
-    right: 12vh;
-    bottom: 16.5vh;
+    right: 13vh;
+    bottom: 15.5vh;
     transform: translateY(-50%);
     width: 2vh;
     height: 2vh;
@@ -128,3 +257,4 @@ body {
     background-size: cover;
     cursor: pointer;
 }
+
